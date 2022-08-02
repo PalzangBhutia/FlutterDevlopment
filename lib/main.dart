@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tut_cat/pages/home_page.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:tut_cat/pages/login_page.dart';
 import 'package:tut_cat/utils/routes.dart';
+import 'package:tut_cat/widgets/themes.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,21 +13,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double price = 110.99;
-    bool isMale = true;
-    num temperature = 30.5;
-
-    var a = "can store anything. also int";
-
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-        primarySwatch: Colors.yellow,
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
-      darkTheme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
       debugShowCheckedModeBanner: false,
       initialRoute: MyRoutes.homeRoute,
       routes: {
