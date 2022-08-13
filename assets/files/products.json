@@ -1,0 +1,44 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Iphone 12 Pro Max",
+            "desc": "Apple Iphone 12th Generation",
+            "price": 1099,
+            "color": "#33505a",
+            "imageUrl": "https://www.deccanherald.com/sites/dh/files/articleimages/2020/10/14/apple-iphone-12-pro-series-901598-1602626981.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Iphone 12 Pro ",
+            "desc": "Apple Iphone 12th Generation",
+            "price": 999,
+            "color": "#33505a",
+            "imageUrl": "https://static.toiimg.com/thumb/resizemode-4,msid-78671027,imgsize-200,width-1200/78671027.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Iphone 13 ",
+            "desc": "Apple Iphone 13th Generation",
+            "price": 799,
+            "color": "#33505a",
+            "imageUrl": "https://m.media-amazon.com/images/I/71gm8v4uPBL._SL1500_.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Samsung Z3 Flip ",
+            "desc": "Samsung Flip phone",
+            "price": 799,
+            "color": "#33505a",
+            "imageUrl": "https://images.samsung.com/uk/smartphones/galaxy-z-flip3-5g/buy/02_Carousel/03-BasicColor/zflip3_carousel_foldunfoldcombo_phantomblack_mo.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Pixel 4 Xl ",
+            "desc": "Google Pixel 4 XL",
+            "price": 649,
+            "color": "#33505a",
+            "imageUrl": "https://m.media-amazon.com/images/I/71Ns3Z6KFcL._AC_SX522_.jpg"
+        }
+    ]
+}

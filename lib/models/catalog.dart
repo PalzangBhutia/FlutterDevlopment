@@ -1,14 +1,7 @@
+import 'dart:convert';
+
 class CatalogModel {
-  static final items = [
-    Item(
-        id: 1,
-        name: "Iphone 12 Pro Max",
-        desc: "Apple Iphone 12th Generation",
-        price: 999,
-        color: "#33505a",
-        imageUrl:
-            "https://www.deccanherald.com/sites/dh/files/articleimages/2020/10/14/apple-iphone-12-pro-series-901598-1602626981.jpg")
-  ];
+  static List<Item> items = [];
 }
 
 class Item {
@@ -26,4 +19,23 @@ class Item {
       required this.price,
       required this.color,
       required this.imageUrl});
+
+  factory Item.fromMap(Map<String, dynamic> map) {
+    return Item(
+        id: map["id"],
+        name: map["name"],
+        desc: map["desc"],
+        price: map["price"],
+        color: map["color"],
+        imageUrl: map["imageUrl"]);
+  }
+
+  toMap() => {
+        "id": id,
+        "name": name,
+        "desc": desc,
+        "price": price,
+        "color": color,
+        "imageUrl": imageUrl
+      };
 }
